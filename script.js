@@ -52,35 +52,17 @@ const current_mode = document.body.dataset.mode = 'dark';
 }
 });
 
-// // Form Button
-// function wrongSend(){
-//     alert('Failed to send your message! Please try contacting us another way');
-// };
+window.onscroll = ()=>{
+    ScroollHeader();
+}
 
+let Header = document.getElementById('fixed-nav');
+let x = 0;
 
-// Active Menu 
-// function ActiveMenu(){
-//     let len = section.length;
-//     while(--len && window.scrollY + 97 < section[len].offsetTop){}
-//     menuActive.forEach(sec => sec.classList.remove('active'));
-//     menuActive[len].classList.add('active');
-// };
-
-// ActiveMenu();
-// window.addEventListener('scroll', ActiveMenu)
-
-
-// window.onscroll = ()=>{
-//     ScroollHeader();
-// }
-
-// let Header = document.getElementById('fixed-nav');
-// let x = 0;
-
-// function ScroollHeader(){
-// if(window.pageYOffset > x){
-//     Header.classList.add('FixedHeader');
-// }else{
-//     Header.classList.remove('FixedHeader');
-// }
-// }
+function ScroollHeader(){
+if(window.pageYOffset > x){
+    Header.classList.add('FixedHeader');
+}else{
+    Header.classList.remove('FixedHeader');
+}
+}
