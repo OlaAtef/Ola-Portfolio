@@ -688,30 +688,30 @@ nav #toggle-mode:hover{
 }
 /* services section end */
 /* portfolio section start */
-#portfolio .work-list{
+ .work-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     margin: 50px 0;
 }
-#portfolio .work-list .work{
+ .work-list .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
     opacity: 0;
     animation: slideRight 1.3s ease forwards;
 }
-#portfolio .work-list .work img{
+ .work-list .work img{
     width: 100%;
     height: auto;
     border-radius: 10px;
     display: block;
     transition:.5s ;
 }
-#portfolio .work-list .work:hover img{
+ .work-list .work:hover img{
     transform: scale(1.2);
 }
-#portfolio .work-list .work .layer{
+ .work-list .work .layer{
     width: 100%;
     height: 0;
     background-color: rgba(255, 255, 255, 0.3);
@@ -729,10 +729,10 @@ nav #toggle-mode:hover{
     padding: 0 40px;
     transition: height 0.4s ease;
 }
-#portfolio .work-list .work:hover .layer{
+ .work-list .work:hover .layer{
     height: 100%;
 }
-#portfolio .work-list .work .layer h3{
+ .work-list .work .layer h3{
     font-size: 17px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -741,7 +741,7 @@ nav #toggle-mode:hover{
     text-transform: uppercase;
     color:#000;
 }
-#portfolio .work-list .work .layer a{
+ .work-list .work .layer a{
     font-size: 16px;
     font-weight: 500;
     color: #000;
@@ -752,12 +752,12 @@ nav #toggle-mode:hover{
     text-align: center;
     transition:all .5s ease;
 }
-#portfolio .work-list .work .layer a:hover{
+ .work-list .work .layer a:hover{
     background-color: var(--second-color);
     color: var(--third-color);
     border-color:var(--second-color);
 }
-#portfolio .work-list .work .layer a span{
+ .work-list .work .layer a span{
     margin-right: 3px;
 }
 /* portfolio section end */
@@ -976,11 +976,11 @@ footer .copy-right a{
     #services .services-list div{
         padding: 20px;
     }
-    #portfolio .work-list{
+     .work-list{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
-    #portfolio .work-list .work .layer h3{
+     .work-list .work .layer h3{
         font-size: 17px;
         letter-spacing: .5px;
     }
@@ -1159,15 +1159,15 @@ footer .copy-right a{
         font-size: 13.5px;
         letter-spacing: .2px;
     }
-    #portfolio .work-list{
+     .work-list{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
     }
-    #portfolio .work-list .work .layer h3{
+     .work-list .work .layer h3{
         font-size: 15.5px;
         letter-spacing: .5px;
     }
-    #portfolio .work-list .work .layer a{
+     .work-list .work .layer a{
         font-size: 15.5px;
     }
     #contact .content{
