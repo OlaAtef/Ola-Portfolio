@@ -76,7 +76,7 @@ nav{
 .FixedHeader{
     background: var(--first-color);
     box-shadow: 0 0  10px var(--second-color);
-    padding: 2px 0;
+    padding: 1.7px 0;
 }
 nav .logo{
     font-size: 27px;
@@ -691,8 +691,8 @@ nav #toggle-mode:hover{
 #portfolio .work-list{
 display: grid;
 grid-template-columns: repeat(4, 1fr);
-grid-gap: 40px;
-margin: 50px 0;
+grid-gap:  20px 30px;
+margin: 50px;
 }
 #Certificates .work-list .work{
 animation: slideLeft 1.3s ease forwards;
