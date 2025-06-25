@@ -34,23 +34,8 @@ document.querySelector('#close-menu').onclick = () =>{
     sidemenu.classList.remove('active');
 }
 
-// Switch Mode The Website..........
-const toggle_mode = document.querySelector('#toggle-mode');
-toggle_mode.addEventListener('click', (e) =>{
-const current_mode = document.body.dataset.mode;
 
-if(current_mode === 'dark'){
-    document.documentElement.style.setProperty('--first-color', '#080808');
-    document.documentElement.style.setProperty('--third-color', '#fff');
-const current_mode = document.body.dataset.mode = 'light';
-// e.target.innerHTML = 'Light Mode';
-} else if (current_mode === 'light'){
-    document.documentElement.style.setProperty('--first-color', '#fff');
-    document.documentElement.style.setProperty('--third-color', '#080808');
-const current_mode = document.body.dataset.mode = 'dark';
-// e.target.innerHTML = 'Dark Mode';
-}
-});
+// FixedHeader
 
 window.onscroll = ()=>{
     ScroollHeader();
